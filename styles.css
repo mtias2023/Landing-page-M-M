@@ -1,0 +1,420 @@
+/* ============================================================
+   M&M PREMIUM STORE — styles.css
+---------------------------------------------------------- */
+:root {
+  --navy-950: #0A0F1E;
+  --navy-900: #0F172A;
+  --navy-800: #1E2D4F;
+  --gold:      #D4AF37;
+  --gold-light:#E8C84A;
+  --gold-dark: #A88A25;
+}
+
+* { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--navy-900);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 { font-family: 'Sora', sans-serif; }
+
+/* Scrollbar */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: var(--navy-950); }
+::-webkit-scrollbar-thumb  { background: var(--gold-dark); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* ----------------------------------------------------------
+   Keyframes
+---------------------------------------------------------- */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-20px); }
+}
+@keyframes fadeUp {
+  0%   { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  0%   { opacity: 0; transform: translateX(20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* ----------------------------------------------------------
+   Gold Text
+---------------------------------------------------------- */
+.gold-text {
+  background: linear-gradient(135deg, #D4AF37, #F5E07C, #D4AF37);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ----------------------------------------------------------
+   Glassmorphism
+---------------------------------------------------------- */
+.glass {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.glass-gold {
+  background: rgba(212,175,55,0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212,175,55,0.15);
+}
+
+/* ----------------------------------------------------------
+   Noise
+---------------------------------------------------------- */
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ----------------------------------------------------------
+   Hero Background
+---------------------------------------------------------- */
+.hero-bg {
+  background:
+    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(30,45,79,0.8) 0%, transparent 60%),
+    linear-gradient(135deg, #0A0F1E 0%, #0F172A 50%, #0A0F1E 100%);
+}
+
+.grid-dots {
+  background-image: radial-gradient(circle, rgba(212,175,55,0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.line-dec {
+  width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(212,175,55,0.4), transparent);
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+}
+
+/* ----------------------------------------------------------
+   Buttons
+---------------------------------------------------------- */
+.btn-primary {
+  background: linear-gradient(135deg, #D4AF37, #A88A25);
+  color: #0A0F1E;
+  font-weight: 700;
+  font-family: 'Sora', sans-serif;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #F5E07C, #D4AF37);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+.btn-primary span { position: relative; z-index: 1; }
+
+.btn-outline {
+  border: 1px solid rgba(212,175,55,0.5);
+  color: #D4AF37;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: rgba(212,175,55,0.1);
+  border-color: #D4AF37;
+  transform: translateY(-2px);
+}
+
+/* ----------------------------------------------------------
+   Navigation — Desktop
+---------------------------------------------------------- */
+.nav-link {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover        { color: #D4AF37; }
+.nav-link:hover::after { width: 100%; }
+
+.logo-text {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.navbar { transition: all 0.4s ease; }
+
+.navbar.scrolled {
+  background: rgba(10,15,30,0.95) !important;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 rgba(212,175,55,0.1);
+}
+
+/* ----------------------------------------------------------
+   Navigation — Mobile Menu
+---------------------------------------------------------- */
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu.active {
+  display: flex;
+  animation: fadeUp 0.3s ease forwards;
+}
+
+/* Item individual del menú mobile */
+.mobile-nav-item {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.25s ease;
+  display: block;
+}
+
+.mobile-nav-item:hover {
+  color: #D4AF37;
+  padding-left: 8px;
+}
+
+.mobile-nav-item:last-child {
+  border-bottom: none;
+}
+
+/* Hamburger bars animation */
+#menu-toggle.active #bar1 {
+  transform: translateY(8px) rotate(45deg);
+}
+#menu-toggle.active #bar2 {
+  opacity: 0;
+  transform: scaleX(0);
+}
+#menu-toggle.active #bar3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ----------------------------------------------------------
+   Cards — Products
+---------------------------------------------------------- */
+.product-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212,175,55,0.05), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.product-card:hover {
+  border-color: rgba(212,175,55,0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.product-card:hover::before { opacity: 1; }
+
+/* ----------------------------------------------------------
+   Cards — Benefits
+---------------------------------------------------------- */
+.benefit-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: rgba(212,175,55,0.04);
+  border-color: rgba(212,175,55,0.2);
+  transform: translateY(-4px);
+}
+
+.icon-circle {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, rgba(212,175,55,0.2), rgba(212,175,55,0.05));
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover .icon-circle {
+  background: linear-gradient(135deg, rgba(212,175,55,0.3), rgba(212,175,55,0.1));
+}
+
+/* ----------------------------------------------------------
+   Cards — Testimonials
+---------------------------------------------------------- */
+.testimonial-card {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: rgba(212,175,55,0.2);
+  background: rgba(212,175,55,0.03);
+}
+
+/* ----------------------------------------------------------
+   Tag & Badge
+---------------------------------------------------------- */
+.community-badge {
+  background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(212,175,55,0.05));
+  border: 1px solid rgba(212,175,55,0.3);
+}
+
+.tag {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #D4AF37;
+  border: 1px solid rgba(212,175,55,0.3);
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(212,175,55,0.08);
+}
+
+/* ----------------------------------------------------------
+   Stat numbers
+---------------------------------------------------------- */
+.stat-number {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+}
+
+/* ----------------------------------------------------------
+   WhatsApp float
+---------------------------------------------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float { bottom: 20px; right: 20px; }
+}
+
+/* ----------------------------------------------------------
+   Scroll Reveal
+---------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ----------------------------------------------------------
+   Animations
+---------------------------------------------------------- */
+.animate-float   { animation: float 6s ease-in-out infinite; }
+.animate-fade-up { animation: fadeUp 0.8s ease forwards; }
+
+/* ----------------------------------------------------------
+   Carrusel — dots
+---------------------------------------------------------- */
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  width: 28px;
+  background: linear-gradient(90deg, #D4AF37, #A88A25);
+}
+
+.carousel-dot:hover {
+  background: rgba(212,175,55,0.4);
+}
