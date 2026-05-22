@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M&M | Productos Importados Premium</title>
+  <meta name="description" content="M&M es una marca premium de productos importados, tecnología y accesorios modernos. Descubrí nuestra comunidad, calidad y confianza." />
+  <meta name="keywords" content="M&M, productos importados, tecnología, accesorios, innovación, ecommerce, premium, Argentina" />
+  <meta name="author" content="M&M Brand" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="M&M — Innovación, Estilo y Confianza" />
+  <meta property="og:description" content="Marca premium de productos importados, tecnología y accesorios modernos. Calidad, confianza y comunidad." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mmstore.com.ar" />
+  <meta property="og:image" content="https://mmstore.com.ar/og-image.jpg" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="M&M — Innovación, Estilo y Confianza" />
+  <meta name="twitter:description" content="Productos importados premium, tecnología y accesorios modernos." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#0A0F1E',
+              900: '#0F172A',
+              800: '#1E2D4F',
+              700: '#243660',
+            },
+            gold: {
+              DEFAULT: '#D4AF37',
+              light: '#E8C84A',
+              dark: '#A88A25',
+              muted: '#B8962E',
+            }
+          },
+          fontFamily: {
+            sora: ['Sora', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.8s ease forwards',
+            'fade-in': 'fadeIn 1s ease forwards',
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-gold': 'pulseGold 2s ease-in-out infinite',
+            'slide-right': 'slideRight 0.5s ease forwards',
+            'shimmer': 'shimmer 2.5s linear infinite',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            pulseGold: {
+              '0%, 100%': { boxShadow: '0 0 0 0 rgba(212,175,55,0.4)' },
+              '50%': { boxShadow: '0 0 0 12px rgba(212,175,55,0)' },
+            },
+            slideRight: {
+              '0%': { transform: 'translateX(-10px)', opacity: '0' },
+              '100%': { transform: 'translateX(0)', opacity: '1' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% center' },
+              '100%': { backgroundPosition: '200% center' },
+            },
+          },
+          backdropBlur: {
+            xs: '2px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  
+</head>
+
+<body class="antialiased">
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos." 
+     target="_blank" rel="noopener"
+     class="whatsapp-float w-14 h-14 rounded-2xl flex items-center justify-center shadow-2xl"
+     style="background: linear-gradient(135deg, #25D366, #128C7E); box-shadow: 0 8px 32px rgba(37,211,102,0.4);"
+     aria-label="Contactar por WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+<!-- NAVBAR -->
+<nav class="navbar fixed top-0 left-0 right-0 z-50 px-6 py-4" id="navbar">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#inicio" class="flex items-center group" aria-label="M&M inicio">
+      <span class="font-extrabold text-2xl tracking-widest uppercase transition-all duration-300"
+            style="background: linear-gradient(135deg, #E8CC6A 0%, #D4AF37 50%, #A88A25 100%);
+                   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                   background-clip: text; letter-spacing: 0.18em;
+                   filter: drop-shadow(0 0 8px rgba(212,175,55,0.4));">M&amp;M</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#sobre"      class="nav-link">Nosotros</a>
+      <a href="#productos"  class="nav-link">Productos</a>
+      <a href="#beneficios" class="nav-link">Beneficios</a>
+      <a href="#comunidad"  class="nav-link">Comunidad</a>
+      <a href="#contacto"   class="nav-link">Contacto</a>
+    </div>
+
+    <!-- CTA Desktop -->
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="https://wa.me/5491171319619" target="_blank" rel="noopener"
+         class="btn-primary px-5 py-2.5 rounded-xl text-sm flex items-center gap-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span>CONTACTANOS</span>
+      </a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button id="menu-toggle" class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 relative z-[110]"
+            aria-label="Menú">
+      <span class="w-6 h-0.5 bg-white transition-all duration-300" id="bar1"></span>
+      <span class="w-4 h-0.5 transition-all duration-300" id="bar2" style="background:#D4AF37;"></span>
+      <span class="w-6 h-0.5 bg-white transition-all duration-300" id="bar3"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu"
+     class="fixed inset-0 z-[100] lg:hidden flex flex-col"
+     style="display:none; background: rgba(10,15,30,0.98);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
+
+  <!-- Header del menu -->
+  <div class="flex items-center justify-between px-6 py-5"
+       style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+    <span class="font-extrabold text-xl tracking-widest"
+          style="background: linear-gradient(135deg, #E8CC6A, #D4AF37, #A88A25);
+                 -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                 background-clip: text; letter-spacing: 0.18em;">M&amp;M</span>
+    <button onclick="closeMobileMenu()"
+            class="w-10 h-10 flex items-center justify-center rounded-xl transition-all duration-300"
+            style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08);"
+            aria-label="Cerrar menú">
+      <svg width="18" height="18" fill="none" stroke="white" stroke-width="2"
+           stroke-linecap="round" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Links -->
+  <div class="flex flex-col px-6 py-8 gap-2 flex-1">
+    <a href="#sobre"      onclick="closeMobileMenu()" class="mobile-nav-item">Nosotros</a>
+    <a href="#productos"  onclick="closeMobileMenu()" class="mobile-nav-item">Productos</a>
+    <a href="#beneficios" onclick="closeMobileMenu()" class="mobile-nav-item">Beneficios</a>
+    <a href="#comunidad"  onclick="closeMobileMenu()" class="mobile-nav-item">Comunidad</a>
+    <a href="#contacto"   onclick="closeMobileMenu()" class="mobile-nav-item">Contacto</a>
+  </div>
+
+  <!-- CTA bottom -->
+  <div class="px-6 pb-10"
+       style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px;">
+    <a href="https://wa.me/5491171319619" target="_blank" rel="noopener"
+       class="btn-primary w-full py-4 rounded-2xl text-sm flex items-center justify-center gap-3 font-bold">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span>Contactar por WhatsApp</span>
+    </a>
+  </div>
+</div>
+
+<!-- HERO SECTION -->
+<section id="inicio" class="hero-bg relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden noise">
+
+  <div class="hero-orb w-96 h-96 opacity-20" style="background:#D4AF37; top:-100px; right:10%; animation: float 8s ease-in-out infinite;"></div>
+  <div class="hero-orb w-64 h-64 opacity-10" style="background:#1E2D4F; bottom:10%; left:-80px; animation: float 10s ease-in-out infinite reverse;"></div>
+  <div class="hero-orb w-48 h-48 opacity-15" style="background:#D4AF37; bottom:30%; right:5%; animation: float 7s ease-in-out infinite 2s;"></div>
+
+  <div class="absolute inset-0 grid-dots opacity-30"></div>
+  <div class="absolute right-0 top-0 bottom-0 w-px line-dec opacity-30 hidden lg:block"></div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <div class="flex items-center gap-3 mb-8">
+          <div class="tag">✦ Nuevo Lanzamiento 2026</div>
+        </div>
+
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6"
+            style="font-family:'Sora',sans-serif; letter-spacing:-0.02em;">
+          Donde la<br/>
+          <span class="gold-text">innovación</span><br/>
+          tiene forma.
+        </h1>
+
+        <p class="text-lg text-white/60 leading-relaxed mb-10 max-w-lg"
+           style="font-family:'Inter',sans-serif; font-weight:300;">
+          M&M es más que una tienda. Somos una marca premium de productos importados, tecnología y accesorios modernos, construida sobre confianza, comunidad y excelencia.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-14">
+          <a href="#productos"
+             class="btn-primary px-8 py-4 rounded-2xl text-sm flex items-center justify-center gap-2">
+            <span>Ver Productos</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#sobre"
+             class="btn-outline px-8 py-4 rounded-2xl text-sm flex items-center justify-center gap-2">
+            <span>Conocer M&M</span>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-8 pt-8 border-t border-white/5">
+          <div>
+            <div class="stat-number text-3xl gold-text">100+</div>
+            <div class="text-xs text-white/40 mt-1" style="letter-spacing:0.1em;">Clientes felices</div>
+          </div>
+          <div class="line-dec h-10"></div>
+          <div>
+            <div class="stat-number text-3xl gold-text">100%</div>
+            <div class="text-xs text-white/40 mt-1" style="letter-spacing:0.1em;">Garantía</div>
+          </div>
+          <div class="line-dec h-10"></div>
+          <div>
+            <div class="stat-number text-3xl gold-text">24h</div>
+            <div class="text-xs text-white/40 mt-1" style="letter-spacing:0.1em;">Atención</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex items-center justify-center">
+        <div class="relative w-full max-w-lg mx-auto animate-float">
+          <div class="relative rounded-3xl overflow-hidden"
+               style="box-shadow: 0 30px 80px rgba(0,0,0,0.5);">
+            <img src="img/flayer_mym.png" alt="M&M Banner Premium"
+                 class="w-full h-auto object-cover"
+                 loading="eager"
+                 style="border-radius: 24px; display:block;" />
+            <div class="absolute inset-0 pointer-events-none"
+                 style="border: 1px solid rgba(255,255,255,0.06); border-radius: 24px;"></div>
+          </div>
+
+          <div class="absolute -top-4 -left-4 glass rounded-2xl px-4 py-3 flex items-center gap-2"
+               style="box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
+            <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+            <span class="text-xs font-semibold text-white/80" style="font-family:'Sora',sans-serif;">Envíos activos</span>
+          </div>
+
+          <div class="absolute -bottom-4 -right-4 glass rounded-2xl px-4 py-3 flex items-center gap-2"
+               style="box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
+            <span style="color:#D4AF37; font-size:1rem;">★</span>
+            <div>
+              <div class="text-xs font-bold" style="font-family:'Sora',sans-serif; color:#D4AF37;">4.9/5</div>
+              <div class="text-xs text-white/40">Valoración</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+    <span class="text-xs" style="font-family:'Sora',sans-serif; letter-spacing:0.15em; font-size:0.65rem;">SCROLL</span>
+    <div class="w-px h-8" style="background:linear-gradient(to bottom, rgba(212,175,55,0.6), transparent);"></div>
+  </div>
+
+</section>
+
+
+  <!-- SOBRE M&M -->
+<section id="sobre" class="py-32 relative overflow-hidden"
+         style="background: linear-gradient(180deg, #0A0F1E 0%, #0F172A 100%);">
+
+  <!-- Fondo decorativo -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+       style="background:
+         radial-gradient(ellipse 60% 40% at 20% 50%, rgba(212,175,55,0.04) 0%, transparent 70%),
+         radial-gradient(ellipse 40% 60% at 80% 30%, rgba(212,175,55,0.03) 0%, transparent 70%);"></div>
+  <div class="absolute inset-0 pointer-events-none opacity-20" aria-hidden="true"
+       style="background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+              background-size: 60px 60px;"></div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+    <!-- ── HEADER ─────────────────────────────── -->
+    <div class="mb-20 reveal">
+      <div class="flex items-center gap-3 mb-6">
+        <div style="width:32px; height:1px; background:linear-gradient(90deg,transparent,#D4AF37);"></div>
+        <span style="font-family:'Inter',sans-serif; font-size:0.7rem; letter-spacing:0.3em;
+                     color:#D4AF37; text-transform:uppercase; font-weight:500;">Nuestra Historia</span>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+
+        <!-- Título + botones -->
+        <div class="flex flex-col gap-8">
+          <h2 class="text-4xl md:text-6xl font-black leading-none"
+              style="font-family:'Sora',sans-serif; letter-spacing:-0.03em;">
+            Una marca con<br/>
+            <span style="background:linear-gradient(135deg,#E8CC6A,#D4AF37,#A88A25);
+                         -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                         background-clip:text;">propósito real.</span>
+          </h2>
+
+          <!-- CTA + Redes -->
+          <div class="flex flex-wrap items-center gap-3">
+
+            <!-- Separador -->
+            <div style="width:1px; height:28px; background:rgba(255,255,255,0.1);"></div>
+
+            <!-- Redes sociales -->
+            <div class="flex items-center gap-3">
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/mym.arg_/" target="_blank" rel="noopener noreferrer"
+                 class="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300
+                        hover:scale-110 hover:border-gold/40"
+                 style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);"
+                 aria-label="Instagram">
+                <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="1.5"
+                     stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="#D4AF37" stroke="none"/>
+                </svg>
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://facebook.com/mmbrand" target="_blank" rel="noopener noreferrer"
+                 class="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300
+                        hover:scale-110 hover:border-gold/40"
+                 style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);"
+                 aria-label="Facebook">
+                <svg width="16" height="16" fill="#D4AF37" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+              </a>
+
+              <!-- TikTok -->
+              <a href="https://tiktok.com/@mmbrand" target="_blank" rel="noopener noreferrer"
+                 class="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300
+                        hover:scale-110 hover:border-gold/40"
+                 style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);"
+                 aria-label="TikTok">
+                <svg width="15" height="15" fill="#D4AF37" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Bajada de texto -->
+        <p class="text-white/40 text-base max-w-sm leading-relaxed md:text-right"
+           style="font-family:'Inter',sans-serif;">
+          M&M nace del deseo de crear algo diferente: una marca profesional, estructurada y confiable en el mundo del ecommerce y los productos importados.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- ── TRES PILARES ───────────────────────── -->
+    <div class="grid md:grid-cols-3 gap-px mb-16 reveal reveal-delay-1"
+         style="background: rgba(212,175,55,0.1); border-radius:24px; overflow:hidden;">
+
+      <!-- Card 1 — Relanzamiento -->
+      <div class="p-10 group transition-all duration-500 cursor-default"
+           style="background: rgba(10,15,30,0.95);">
+        <div class="mb-8">
+          <!-- Ícono -->
+          <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300
+                      group-hover:scale-110"
+               style="background:rgba(212,175,55,0.08); border:1px solid rgba(212,175,55,0.2);">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <polyline points="23 4 23 10 17 10"/>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </svg>
+          </div>
+          <div style="width:40px; height:1px; background:linear-gradient(90deg,#D4AF37,transparent);
+                      margin-bottom:20px;"></div>
+        </div>
+        <h3 class="text-xl font-bold mb-4 text-white"
+            style="font-family:'Sora',sans-serif; letter-spacing:-0.01em;">El Relanzamiento</h3>
+        <p class="text-white/40 leading-relaxed text-sm" style="font-family:'Inter',sans-serif;">
+          Lo que comenzó como un emprendimiento se transforma hoy en una marca con identidad propia, estructura profesional y visión a largo plazo.
+        </p>
+      </div>
+
+      <!-- Card 2 — Misión -->
+      <div class="p-10 group transition-all duration-500 cursor-default relative overflow-hidden"
+           style="background: linear-gradient(135deg, rgba(212,175,55,0.07), rgba(10,15,30,0.98));">
+        <div class="absolute top-0 right-0 w-32 h-32 pointer-events-none"
+             style="background: radial-gradient(circle at top right, rgba(212,175,55,0.1), transparent 70%);"></div>
+        <div class="mb-8">
+          <!-- Ícono -->
+          <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300
+                      group-hover:scale-110"
+               style="background:rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.3);">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="3"/>
+              <line x1="12" y1="2" x2="12" y2="5"/>
+              <line x1="12" y1="19" x2="12" y2="22"/>
+              <line x1="2" y1="12" x2="5" y2="12"/>
+              <line x1="19" y1="12" x2="22" y2="12"/>
+            </svg>
+          </div>
+          <div style="width:40px; height:1px; background:linear-gradient(90deg,#D4AF37,transparent);
+                      margin-bottom:20px;"></div>
+        </div>
+        <h3 class="text-xl font-bold mb-4"
+            style="font-family:'Sora',sans-serif; letter-spacing:-0.01em;
+                   background:linear-gradient(135deg,#E8CC6A,#D4AF37);
+                   -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                   background-clip:text;">Nuestra Misión</h3>
+        <p class="text-white/40 leading-relaxed text-sm" style="font-family:'Inter',sans-serif;">
+          Brindar productos modernos e innovadores, creando una marca confiable donde tanto clientes como vendedores puedan crecer junto a M&M.
+        </p>
+      </div>
+
+      <!-- Card 3 — Visión -->
+      <div class="p-10 group transition-all duration-500 cursor-default"
+           style="background: rgba(10,15,30,0.95);">
+        <div class="mb-8">
+          <!-- Ícono -->
+          <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300
+                      group-hover:scale-110"
+               style="background:rgba(212,175,55,0.08); border:1px solid rgba(212,175,55,0.2);">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div style="width:40px; height:1px; background:linear-gradient(90deg,#D4AF37,transparent);
+                      margin-bottom:20px;"></div>
+        </div>
+        <h3 class="text-xl font-bold mb-4 text-white"
+            style="font-family:'Sora',sans-serif; letter-spacing:-0.01em;">Nuestra Visión</h3>
+        <p class="text-white/40 leading-relaxed text-sm" style="font-family:'Inter',sans-serif;">
+          Convertirnos en una marca reconocida dentro del ecommerce, destacándonos por nuestra identidad visual y una comunidad sólida de vendedores.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ── FILOSOFÍA + STATS ───────────────────── -->
+    <div class="grid md:grid-cols-5 gap-6 reveal reveal-delay-2">
+
+      <!-- Filosofía -->
+      <div class="md:col-span-3 rounded-3xl p-10 relative overflow-hidden"
+           style="background: linear-gradient(135deg, rgba(212,175,55,0.05), rgba(15,23,42,0.8));
+                  border: 1px solid rgba(212,175,55,0.12);">
+        <div class="absolute bottom-0 right-0 pointer-events-none" aria-hidden="true"
+             style="width:200px; height:200px;
+                    background: radial-gradient(circle at bottom right, rgba(212,175,55,0.08), transparent 70%);"></div>
+        <div style="width:32px; height:1px; background:#D4AF37; margin-bottom:28px; opacity:0.6;"></div>
+        <p class="text-white/25 text-xs tracking-widest uppercase mb-4"
+           style="font-family:'Inter',sans-serif; letter-spacing:0.3em;">Filosofía M&M</p>
+        <blockquote class="text-3xl md:text-4xl font-black leading-tight mb-8"
+                    style="font-family:'Sora',sans-serif; letter-spacing:-0.02em;">
+          "Innovación, estilo<br/>y
+          <span style="background:linear-gradient(135deg,#E8CC6A,#D4AF37,#A88A25);
+                       -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                       background-clip:text;">confianza."</span>
+        </blockquote>
+        <p class="text-white/40 leading-relaxed text-sm max-w-md" style="font-family:'Inter',sans-serif;">
+          Cada producto pasa por un proceso de selección riguroso. No vendemos cualquier cosa: vendemos lo que nosotros mismos usaríamos. Esa es la promesa de M&M.
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="md:col-span-2 grid grid-cols-2 gap-4">
+
+        <div class="rounded-2xl p-6 flex flex-col justify-between"
+             style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06);">
+          <span style="font-size:0.6rem; letter-spacing:0.25em; color:#D4AF37;
+                       text-transform:uppercase; font-family:'Inter',sans-serif;">Experiencia</span>
+          <div>
+            <div class="text-4xl font-black"
+                 style="font-family:'Sora',sans-serif;
+                        background:linear-gradient(135deg,#E8CC6A,#D4AF37);
+                        -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                        background-clip:text;">2+</div>
+            <div class="text-white/30 text-xs mt-1" style="font-family:'Inter',sans-serif;">Años en el mercado</div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-6 flex flex-col justify-between"
+             style="background:rgba(212,175,55,0.06); border:1px solid rgba(212,175,55,0.15);">
+          <span style="font-size:0.6rem; letter-spacing:0.25em; color:#D4AF37;
+                       text-transform:uppercase; font-family:'Inter',sans-serif;">Clientes</span>
+          <div>
+            <div class="text-4xl font-black"
+                 style="font-family:'Sora',sans-serif;
+                        background:linear-gradient(135deg,#E8CC6A,#D4AF37);
+                        -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                        background-clip:text;">100+</div>
+            <div class="text-white/30 text-xs mt-1" style="font-family:'Inter',sans-serif;">Satisfechos</div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-6 flex flex-col justify-between"
+             style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06);">
+          <span style="font-size:0.6rem; letter-spacing:0.25em; color:#D4AF37;
+                       text-transform:uppercase; font-family:'Inter',sans-serif;">Productos</span>
+          <div>
+            <div class="text-4xl font-black"
+                 style="font-family:'Sora',sans-serif;
+                        background:linear-gradient(135deg,#E8CC6A,#D4AF37);
+                        -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                        background-clip:text;">50+</div>
+            <div class="text-white/30 text-xs mt-1" style="font-family:'Inter',sans-serif;">Curados</div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-6 flex flex-col justify-between"
+             style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06);">
+          <span style="font-size:0.6rem; letter-spacing:0.25em; color:#D4AF37;
+                       text-transform:uppercase; font-family:'Inter',sans-serif;">Compromiso</span>
+          <div>
+            <div class="text-4xl font-black"
+                 style="font-family:'Sora',sans-serif;
+                        background:linear-gradient(135deg,#E8CC6A,#D4AF37);
+                        -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                        background-clip:text;">100%</div>
+            <div class="text-white/30 text-xs mt-1" style="font-family:'Inter',sans-serif;">Real</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTOS DESTACADOS -->
+<section id="productos" class="py-28 relative" style="background:#0A0F1E;">
+
+  <div class="grid-dots absolute inset-0 opacity-20"></div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+    <div class="text-center mb-16 reveal">
+      <div class="tag inline-block mb-6">✦ Catálogo Premium</div>
+      <h2 class="text-4xl md:text-5xl font-black mb-6"
+          style="font-family:'Sora',sans-serif; letter-spacing:-0.02em;">
+        Productos <span class="gold-text">seleccionados</span><br/>para vos.
+      </h2>
+      <p class="text-white/50 max-w-xl mx-auto">
+        Cada producto en M&M es elegido con criterio. Tecnología, diseño y calidad premium, siempre al mejor precio.
+      </p>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+      <!-- Product 1 — TV -->
+      <div class="product-card rounded-3xl overflow-hidden reveal reveal-delay-1">
+        <div class="h-56 relative overflow-hidden"
+             style="background: linear-gradient(135deg, rgba(10,15,30,0.9), rgba(30,45,79,0.6));">
+          <img src="img/tv32-Photoroom.png" alt="Smart TV Premium"
+               class="w-full h-full object-contain transition-transform duration-500 hover:scale-105 p-4"
+               loading="lazy"/>
+          <div class="absolute inset-0 pointer-events-none"
+               style="background: linear-gradient(to top, rgba(10,15,30,0.6) 0%, transparent 60%);"></div>
+          <div class="absolute top-4 right-4 tag text-xs">Nuevo</div>
+        </div>
+        <div class="p-6">
+          <div class="text-xs text-white/30 mb-2 uppercase tracking-wider">Tecnología</div>
+          <h3 class="font-bold text-white mb-1" style="font-family:'Sora',sans-serif;">Smart TV Premium</h3>
+          <p class="text-xs text-white/40 mb-4">Pantalla de alta definición con conectividad total y diseño moderno.</p>
+          <div class="flex items-center justify-between">
+            <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20consultar%20por%20la%20Smart%20TV%20Premium%20%F0%9F%93%BA"
+               target="_blank" rel="noopener"
+               class="text-xl font-black gold-text" style="font-family:'Sora',sans-serif;">Consultar</a>
+            <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20consultar%20por%20la%20Smart%20TV%20Premium%20%F0%9F%93%BA"
+               target="_blank" rel="noopener"
+               class="btn-primary w-9 h-9 rounded-xl flex items-center justify-center">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 — iPhone -->
+      <div class="product-card rounded-3xl overflow-hidden reveal reveal-delay-2">
+        <div class="h-56 relative overflow-hidden"
+             style="background: linear-gradient(135deg, rgba(20,10,5,0.9), rgba(80,40,10,0.4));">
+          <img src="img/iphone17-Photoroom.png" alt="iPhone 17 Pro Max"
+               class="w-full h-full object-contain transition-transform duration-500 hover:scale-105 p-4"
+               loading="lazy"/>
+          <div class="absolute inset-0 pointer-events-none"
+               style="background: linear-gradient(to top, rgba(10,15,30,0.6) 0%, transparent 60%);"></div>
+          <div class="absolute top-4 right-4 tag text-xs">Top</div>
+        </div>
+        <div class="p-6">
+          <div class="text-xs text-white/30 mb-2 uppercase tracking-wider">Smartphones</div>
+          <h3 class="font-bold text-white mb-1" style="font-family:'Sora',sans-serif;">iPhone 17 Pro Max</h3>
+          <p class="text-xs text-white/40 mb-4">Últimos modelos originales importados con garantía verificada.</p>
+          <div class="flex items-center justify-between">
+            <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20consultar%20por%20el%20iPhone%2017%20Pro%20Max%20%F0%9F%93%B1"
+               target="_blank" rel="noopener"
+               class="text-xl font-black gold-text" style="font-family:'Sora',sans-serif;">Consultar</a>
+            <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20consultar%20por%20el%20iPhone%2017%20Pro%20Max%20%F0%9F%93%B1"
+               target="_blank" rel="noopener"
+               class="btn-primary w-9 h-9 rounded-xl flex items-center justify-center">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 — Álbum FIFA -->
+      <div class="product-card rounded-3xl overflow-hidden reveal reveal-delay-3">
+        <div class="h-56 relative overflow-hidden"
+             style="background: linear-gradient(135deg, rgba(0,20,60,0.9), rgba(10,30,80,0.6));">
+          <img src="img/albun-Photoroom.png" alt="Álbum FIFA World Cup 2026"
+               class="w-full h-full object-contain transition-transform duration-500 hover:scale-105 p-4"
+               loading="lazy"/>
+          <div class="absolute inset-0 pointer-events-none"
+               style="background: linear-gradient(to top, rgba(10,15,30,0.6) 0%, transparent 60%);"></div>
+          <div class="absolute top-4 right-4 tag text-xs">Premium</div>
+        </div>
+        <div class="p-6">
+          <div class="text-xs text-white/30 mb-2 uppercase tracking-wider">Coleccionables</div>
+          <h3 class="font-bold text-white mb-1" style="font-family:'Sora',sans-serif;">Álbum FIFA World Cup 2026</h3>
+          <p class="text-xs text-white/40 mb-4">Álbum oficial Panini del Mundial 2026. Edición coleccionable.</p>
+          <div class="flex items-center justify-between">
+            <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20consultar%20por%20el%20%C3%81lbum%20FIFA%20World%20Cup%202026%20%E2%9A%BD"
+               target="_blank" rel="noopener"
+               class="text-xl font-black gold-text" style="font-family:'Sora',sans-serif;">Consultar</a>
+            <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20consultar%20por%20el%20%C3%81lbum%20FIFA%20World%20Cup%202026%20%E2%9A%BD"
+               target="_blank" rel="noopener"
+               class="btn-primary w-9 h-9 rounded-xl flex items-center justify-center">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 — Camiseta Argentina -->
+      <div class="product-card rounded-3xl overflow-hidden reveal reveal-delay-4">
+        <div class="h-56 relative overflow-hidden"
+             style="background: linear-gradient(135deg, rgba(100,149,237,0.15), rgba(255,255,255,0.05));">
+          <img src="img/camise_arg-Photoroom.png" alt="Camiseta Argentina Oficial"
+               class="w-full h-full object-contain transition-transform duration-500 hover:scale-105 p-4"
+               loading="lazy"/>
+          <div class="absolute inset-0 pointer-events-none"
+               style="background: linear-gradient(to top, rgba(10,15,30,0.6) 0%, transparent 60%);"></div>
+          <div class="absolute top-4 right-4 tag text-xs">Importado</div>
+        </div>
+        <div class="p-6">
+          <div class="text-xs text-white/30 mb-2 uppercase tracking-wider">Indumentaria</div>
+          <h3 class="font-bold text-white mb-1" style="font-family:'Sora',sans-serif;">Camiseta Argentina Oficial</h3>
+          <p class="text-xs text-white/40 mb-4">Camiseta oficial de la Selección Argentina, importada y original.</p>
+          <div class="flex items-center justify-between">
+            <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20consultar%20por%20la%20Camiseta%20Argentina%20Oficial%20%F0%9F%87%A6%F0%9F%87%B7"
+               target="_blank" rel="noopener"
+               class="text-xl font-black gold-text" style="font-family:'Sora',sans-serif;">Consultar</a>
+            <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20consultar%20por%20la%20Camiseta%20Argentina%20Oficial%20%F0%9F%87%A6%F0%9F%87%B7"
+               target="_blank" rel="noopener"
+               class="btn-primary w-9 h-9 rounded-xl flex items-center justify-center">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- More products CTA -->
+    <div class="w-full flex flex-col items-center justify-center text-center mt-16 reveal">
+      <p class="text-white/40 mb-6 text-sm">
+        ¿No encontrás lo que buscás? Tenemos mucho más.
+      </p>
+
+      <a href="https://wa.me/5491171319619?text=Hola!%20Quiero%20ver%20el%20cat%C3%A1logo%20completo%20de%20M%26M."
+         target="_blank"
+         rel="noopener"
+         class="btn-outline inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-sm">
+
+        <span>Ver catálogo completo</span>
+
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="py-28 relative" style="background: linear-gradient(180deg, #0A0F1E 0%, #0F172A 100%);">
+    
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center mb-16 reveal">
+        <div class="tag inline-block mb-6">✦ Por qué elegirnos</div>
+        <h2 class="text-4xl md:text-5xl font-black mb-6" style="font-family:'Sora',sans-serif; letter-spacing:-0.02em;">
+          La diferencia M&M<br/>
+          <span class="gold-text">que vas a notar.</span>
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="benefit-card rounded-3xl p-8 reveal reveal-delay-1">
+          <div class="icon-circle mb-6">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold mb-3" style="font-family:'Sora',sans-serif;">Calidad Garantizada</h3>
+          <p class="text-white/45 text-sm leading-relaxed">Cada producto pasa por una selección rigurosa. Si no cumple nuestros estándares, no lo vendemos.</p>
+        </div>
+
+        <div class="benefit-card rounded-3xl p-8 reveal reveal-delay-2">
+          <div class="icon-circle mb-6">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold mb-3" style="font-family:'Sora',sans-serif;">Confianza Real</h3>
+          <p class="text-white/45 text-sm leading-relaxed">Transparencia en cada transacción. Sabés exactamente qué comprás, cómo llega y qué pasa si hay algún problema.</p>
+        </div>
+
+        <div class="benefit-card rounded-3xl p-8 reveal reveal-delay-3">
+          <div class="icon-circle mb-6">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold mb-3" style="font-family:'Sora',sans-serif;">Atención Personalizada</h3>
+          <p class="text-white/45 text-sm leading-relaxed">Respondemos rápido. Nuestro equipo está disponible para asesorarte en cada paso de tu compra.</p>
+        </div>
+
+        <div class="benefit-card rounded-3xl p-8 reveal reveal-delay-1">
+          <div class="icon-circle mb-6">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold mb-3" style="font-family:'Sora',sans-serif;">Comunidad Activa</h3>
+          <p class="text-white/45 text-sm leading-relaxed">Formás parte de una comunidad que crece. Clientes y vendedores construyendo juntos algo más grande.</p>
+        </div>
+
+        <div class="benefit-card rounded-3xl p-8 reveal reveal-delay-2">
+          <div class="icon-circle mb-6">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold mb-3" style="font-family:'Sora',sans-serif;">Innovación Constante</h3>
+          <p class="text-white/45 text-sm leading-relaxed">Siempre incorporando nuevos productos, tendencias y tecnologías para que siempre tengas acceso a lo mejor.</p>
+        </div>
+
+        <div class="benefit-card rounded-3xl p-8 reveal reveal-delay-3">
+          <div class="icon-circle mb-6">
+            <svg width="22" height="22" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold mb-3" style="font-family:'Sora',sans-serif;">Precios Competitivos</h3>
+          <p class="text-white/45 text-sm leading-relaxed">Calidad premium a precios justos. Importación directa que nos permite ofrecerte el mejor valor del mercado.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMUNIDAD Y VENDEDORES -->
+<section id="comunidad" class="py-28 relative overflow-hidden" style="background:#0A0F1E;">
+
+  <div class="absolute inset-0 grid-dots opacity-15"></div>
+
+  <div class="absolute w-96 h-96 rounded-full pointer-events-none"
+       style="background: radial-gradient(circle, rgba(30,45,79,0.6) 0%, transparent 70%);
+              top:10%; left:-120px; filter:blur(60px);"></div>
+  <div class="absolute w-64 h-64 rounded-full pointer-events-none"
+       style="background: radial-gradient(circle, rgba(20,35,65,0.5) 0%, transparent 70%);
+              bottom:10%; right:-80px; filter:blur(50px);"></div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+      <!-- ── IZQUIERDA ──────────────────────────── -->
+      <div class="reveal flex flex-col gap-8">
+
+        <!-- Label + Título -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div style="width:32px; height:1px; background:linear-gradient(90deg,transparent,#D4AF37);"></div>
+            <span style="font-family:'Inter',sans-serif; font-size:0.7rem; letter-spacing:0.3em;
+                         color:#D4AF37; text-transform:uppercase; font-weight:500;">Oportunidades</span>
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black leading-tight"
+              style="font-family:'Sora',sans-serif; letter-spacing:-0.02em;">
+            Crecé con<br/>
+            <span style="background:linear-gradient(135deg,#E8CC6A,#D4AF37,#A88A25);
+                         -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                         background-clip:text;">M&M.</span>
+          </h2>
+        </div>
+
+        <!-- Texto intro -->
+        <p class="text-white/45 leading-relaxed text-sm"
+           style="font-family:'Inter',sans-serif;">
+          M&M no es solo una tienda. Trabajamos con vendedores independientes que representan nuestra marca y ganan comisiones reales desde el primer día. Sin inversión inicial, sin riesgo.
+        </p>
+
+        <!-- Beneficios -->
+        <div class="space-y-5">
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                 style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);">
+              <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="1.5"
+                   stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-white text-sm mb-0.5"
+                   style="font-family:'Sora',sans-serif;">Comisiones atractivas por venta</div>
+              <div class="text-white/35 text-xs leading-relaxed"
+                   style="font-family:'Inter',sans-serif;">Ganás por cada producto vendido sin invertir capital inicial.</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                 style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);">
+              <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="1.5"
+                   stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-white text-sm mb-0.5"
+                   style="font-family:'Sora',sans-serif;">Respaldo de una marca profesional</div>
+              <div class="text-white/35 text-xs leading-relaxed"
+                   style="font-family:'Inter',sans-serif;">Vendés con el peso de una identidad seria y confiable detrás tuyo.</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                 style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);">
+              <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="1.5"
+                   stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
+                <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-white text-sm mb-0.5"
+                   style="font-family:'Sora',sans-serif;">Capacitación y materiales incluidos</div>
+              <div class="text-white/35 text-xs leading-relaxed"
+                   style="font-family:'Inter',sans-serif;">Te damos las herramientas para crecer y escalar tu negocio.</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                 style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);">
+              <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="1.5"
+                   stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                <path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-white text-sm mb-0.5"
+                   style="font-family:'Sora',sans-serif;">Comunidad de emprendedores activa</div>
+              <div class="text-white/35 text-xs leading-relaxed"
+                   style="font-family:'Inter',sans-serif;">No estás solo. Somos un equipo que se apoya y crece junto.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botón dorado -->
+        <div>
+          <a href="https://wa.me/5491171319619?text=Hola!%20Quiero%20ser%20vendedor%20de%20M%26M."
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl text-sm font-bold
+                    transition-all duration-300 hover:scale-105 hover:brightness-110"
+             style="background:linear-gradient(135deg,#D4AF37,#A88A25);
+                    color:#0A0F1E; font-family:'Sora',sans-serif;">
+            <span>Quiero ser vendedor</span>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- ── DERECHA: Card comunidad ───────────── -->
+      <div class="reveal reveal-delay-2">
+        <div class="rounded-3xl overflow-hidden"
+             style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07);">
+
+          <!-- Stat principal -->
+          <div class="p-8 text-center"
+               style="border-bottom:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size:0.65rem; letter-spacing:0.3em; color:rgba(255,255,255,0.25);
+                        text-transform:uppercase; font-family:'Inter',sans-serif; margin-bottom:12px;">
+              Red M&M · Argentina
+            </div>
+            <div class="text-7xl font-black leading-none mb-3"
+                 style="font-family:'Sora',sans-serif;
+                        background:linear-gradient(135deg,#E8CC6A,#D4AF37,#A88A25);
+                        -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                        background-clip:text;">+20</div>
+            <div style="color:rgba(255,255,255,0.3); font-size:0.85rem;
+                        font-family:'Inter',sans-serif;">
+              Vendedores activos en todo el país
+            </div>
+          </div>
+
+          <!-- Network SVG -->
+          <div class="px-8 py-6"
+               style="border-bottom:1px solid rgba(255,255,255,0.05);">
+            <svg viewBox="0 0 300 160" class="w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="150" y1="62" x2="80" y2="28"  stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <line x1="150" y1="62" x2="150" y2="18" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <line x1="150" y1="62" x2="220" y2="28" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <line x1="122" y1="88" x2="45"  y2="68" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <line x1="122" y1="92" x2="38"  y2="115" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <line x1="178" y1="88" x2="255" y2="68" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <line x1="178" y1="92" x2="262" y2="115" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <line x1="150" y1="118" x2="80"  y2="148" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <line x1="150" y1="118" x2="220" y2="148" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+              <circle cx="150" cy="90" r="26" fill="rgba(212,175,55,0.08)"
+                      stroke="rgba(212,175,55,0.25)" stroke-width="1.5"/>
+              <circle cx="150" cy="90" r="16" fill="rgba(212,175,55,0.12)"/>
+              <text x="150" y="94" text-anchor="middle" fill="#D4AF37"
+                    font-size="9" font-weight="700" font-family="Sora, sans-serif">M&M</text>
+
+              <g fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1">
+                <circle cx="80"  cy="28"  r="13"/>
+                <circle cx="150" cy="18"  r="13"/>
+                <circle cx="220" cy="28"  r="13"/>
+                <circle cx="45"  cy="68"  r="11"/>
+                <circle cx="38"  cy="115" r="11"/>
+                <circle cx="255" cy="68"  r="11"/>
+                <circle cx="262" cy="115" r="11"/>
+                <circle cx="80"  cy="148" r="13"/>
+                <circle cx="220" cy="148" r="13"/>
+              </g>
+
+              <g stroke="rgba(255,255,255,0.25)" stroke-width="1.2" fill="none"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="80"  cy="25"  r="3.5"/><path d="M73 33c0-3.87 3.13-7 7-7s7 3.13 7 7"   opacity=".5"/>
+                <circle cx="150" cy="15"  r="3.5"/><path d="M143 23c0-3.87 3.13-7 7-7s7 3.13 7 7" opacity=".5"/>
+                <circle cx="220" cy="25"  r="3.5"/><path d="M213 33c0-3.87 3.13-7 7-7s7 3.13 7 7" opacity=".5"/>
+                <circle cx="45"  cy="65"  r="3"  /><path d="M39 72c0-3.31 2.69-6 6-6s6 2.69 6 6"   opacity=".5"/>
+                <circle cx="38"  cy="112" r="3"  /><path d="M32 119c0-3.31 2.69-6 6-6s6 2.69 6 6"  opacity=".5"/>
+                <circle cx="255" cy="65"  r="3"  /><path d="M249 72c0-3.31 2.69-6 6-6s6 2.69 6 6"  opacity=".5"/>
+                <circle cx="262" cy="112" r="3"  /><path d="M256 119c0-3.31 2.69-6 6-6s6 2.69 6 6" opacity=".5"/>
+                <circle cx="80"  cy="145" r="3.5"/><path d="M73 153c0-3.87 3.13-7 7-7s7 3.13 7 7"  opacity=".5"/>
+                <circle cx="220" cy="145" r="3.5"/><path d="M213 153c0-3.87 3.13-7 7-7s7 3.13 7 7" opacity=".5"/>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3">
+            <div class="py-6 text-center"
+                 style="border-right:1px solid rgba(255,255,255,0.05);">
+              <div class="text-2xl font-black mb-1"
+                   style="font-family:'Sora',sans-serif;
+                          background:linear-gradient(135deg,#E8CC6A,#D4AF37);
+                          -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                          background-clip:text;">10%</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.25); font-family:'Inter',sans-serif;">Comisión base</div>
+            </div>
+            <div class="py-6 text-center"
+                 style="border-right:1px solid rgba(255,255,255,0.05);">
+              <div class="text-2xl font-black mb-1"
+                   style="font-family:'Sora',sans-serif;
+                          background:linear-gradient(135deg,#E8CC6A,#D4AF37);
+                          -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                          background-clip:text;">$0</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.25); font-family:'Inter',sans-serif;">Inversión inicial</div>
+            </div>
+            <div class="py-6 text-center">
+              <div class="text-2xl font-black mb-1"
+                   style="font-family:'Sora',sans-serif;
+                          background:linear-gradient(135deg,#E8CC6A,#D4AF37);
+                          -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                          background-clip:text;">∞</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.25); font-family:'Inter',sans-serif;">Potencial</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- TESTIMONIOS -->
+<section class="py-28 relative overflow-hidden" style="background: linear-gradient(180deg, #0A0F1E 0%, #0F172A 100%);">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="mb-16 reveal">
+      <div class="flex items-center gap-3 mb-6">
+        <div style="width:32px; height:1px; background:linear-gradient(90deg,transparent,#D4AF37);"></div>
+        <span style="font-family:'Inter',sans-serif; font-size:0.7rem; letter-spacing:0.3em;
+                     color:#D4AF37; text-transform:uppercase; font-weight:500;">Testimonios</span>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <h2 class="text-4xl md:text-5xl font-black leading-tight"
+            style="font-family:'Sora',sans-serif; letter-spacing:-0.02em;">
+          Lo que dice<br/>
+          <span style="background:linear-gradient(135deg,#E8CC6A,#D4AF37,#A88A25);
+                       -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                       background-clip:text;">nuestra comunidad.</span>
+        </h2>
+        <!-- Controles carrusel -->
+        <div class="flex items-center gap-3">
+          <button id="prev-btn"
+                  class="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300
+                         hover:scale-105"
+                  style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);"
+                  aria-label="Anterior">
+            <svg width="16" height="16" fill="none" stroke="white" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M19 12H5M12 5l-7 7 7 7"/>
+            </svg>
+          </button>
+          <button id="next-btn"
+                  class="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300
+                         hover:scale-105"
+                  style="background:linear-gradient(135deg,#D4AF37,#A88A25); border:none;"
+                  aria-label="Siguiente">
+            <svg width="16" height="16" fill="none" stroke="#0A0F1E" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrusel wrapper -->
+    <div class="relative overflow-hidden reveal">
+      <div id="carousel-track"
+           class="flex gap-6 transition-transform duration-500 ease-in-out"
+           style="will-change: transform;">
+
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card rounded-3xl p-8 flex-shrink-0"
+             style="width: calc(33.333% - 16px); min-width: 280px;">
+          <div class="flex items-center gap-1 mb-5">
+            <span style="color:#D4AF37; letter-spacing:2px;">★★★★★</span>
+          </div>
+          <p class="text-white/60 leading-relaxed mb-6 text-sm" style="font-family:'Inter',sans-serif;">
+            "Compré auriculares importados y la calidad superó todas mis expectativas. La atención fue increíble y el producto llegó perfectamente."
+          </p>
+          <div class="flex items-center gap-3 pt-6" style="border-top:1px solid rgba(255,255,255,0.05);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0"
+                 style="background:linear-gradient(135deg,#D4AF37,#A88A25); color:#0A0F1E; font-family:'Sora',sans-serif;">MG</div>
+            <div>
+              <div class="font-semibold text-sm text-white" style="font-family:'Sora',sans-serif;">Martina G.</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.3);">Cliente verificada</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card rounded-3xl p-8 flex-shrink-0"
+             style="width: calc(33.333% - 16px); min-width: 280px;">
+          <div class="flex items-center gap-1 mb-5">
+            <span style="color:#D4AF37; letter-spacing:2px;">★★★★★</span>
+          </div>
+          <p class="text-white/60 leading-relaxed mb-6 text-sm" style="font-family:'Inter',sans-serif;">
+            "Soy vendedor de M&M hace 3 meses y ya genero un ingreso extra real. La marca tiene todo organizado y me da las herramientas para vender bien."
+          </p>
+          <div class="flex items-center gap-3 pt-6" style="border-top:1px solid rgba(255,255,255,0.05);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0"
+                 style="background:linear-gradient(135deg,#D4AF37,#A88A25); color:#0A0F1E; font-family:'Sora',sans-serif;">LR</div>
+            <div>
+              <div class="font-semibold text-sm text-white" style="font-family:'Sora',sans-serif;">Lucas R.</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.3);">Vendedor M&M</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonial-card rounded-3xl p-8 flex-shrink-0"
+             style="width: calc(33.333% - 16px); min-width: 280px;">
+          <div class="flex items-center gap-1 mb-5">
+            <span style="color:#D4AF37; letter-spacing:2px;">★★★★★</span>
+          </div>
+          <p class="text-white/60 leading-relaxed mb-6 text-sm" style="font-family:'Inter',sans-serif;">
+            "Por fin una marca de importados seria. Nada de las típicas demoras o excusas. M&M cumple con lo que promete y eso vale oro."
+          </p>
+          <div class="flex items-center gap-3 pt-6" style="border-top:1px solid rgba(255,255,255,0.05);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0"
+                 style="background:linear-gradient(135deg,#D4AF37,#A88A25); color:#0A0F1E; font-family:'Sora',sans-serif;">SV</div>
+            <div>
+              <div class="font-semibold text-sm text-white" style="font-family:'Sora',sans-serif;">Sofía V.</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.3);">Cliente verificada</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 4 -->
+        <div class="testimonial-card rounded-3xl p-8 flex-shrink-0"
+             style="width: calc(33.333% - 16px); min-width: 280px;">
+          <div class="flex items-center gap-1 mb-5">
+            <span style="color:#D4AF37; letter-spacing:2px;">★★★★★</span>
+          </div>
+          <p class="text-white/60 leading-relaxed mb-6 text-sm" style="font-family:'Inter',sans-serif;">
+            "Arranqué sin saber nada de ventas y con el apoyo de M&M pude armar mi cartera de clientes en pocas semanas. 100% recomendable para empezar."
+          </p>
+          <div class="flex items-center gap-3 pt-6" style="border-top:1px solid rgba(255,255,255,0.05);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0"
+                 style="background:linear-gradient(135deg,#D4AF37,#A88A25); color:#0A0F1E; font-family:'Sora',sans-serif;">FM</div>
+            <div>
+              <div class="font-semibold text-sm text-white" style="font-family:'Sora',sans-serif;">Federico M.</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.3);">Vendedor M&M</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 5 -->
+        <div class="testimonial-card rounded-3xl p-8 flex-shrink-0"
+             style="width: calc(33.333% - 16px); min-width: 280px;">
+          <div class="flex items-center gap-1 mb-5">
+            <span style="color:#D4AF37; letter-spacing:2px;">★★★★★</span>
+          </div>
+          <p class="text-white/60 leading-relaxed mb-6 text-sm" style="font-family:'Inter',sans-serif;">
+            "La camiseta de Argentina llegó en tiempo récord y es idéntica a la original. Primera vez que compro importado sin miedo y sin arrepentirme."
+          </p>
+          <div class="flex items-center gap-3 pt-6" style="border-top:1px solid rgba(255,255,255,0.05);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0"
+                 style="background:linear-gradient(135deg,#D4AF37,#A88A25); color:#0A0F1E; font-family:'Sora',sans-serif;">DP</div>
+            <div>
+              <div class="font-semibold text-sm text-white" style="font-family:'Sora',sans-serif;">Diego P.</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.3);">Cliente verificado</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Dots indicadores -->
+    <div id="carousel-dots" class="flex justify-center gap-2 mt-10">
+      <button class="carousel-dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="carousel-dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="carousel-dot" data-index="2" aria-label="Slide 3"></button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- CTA FINAL -->
+  <section class="py-28 relative overflow-hidden" style="background:#0A0F1E;">
+    
+    <!-- Background effects -->
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(212,175,55,0.08) 0%, transparent 70%);"></div>
+    <div class="grid-dots absolute inset-0 opacity-20"></div>
+    
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      
+      <div class="reveal">
+        <div class="tag inline-block mb-8">✦ ¿Listo para empezar?</div>
+        
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-black mb-8" style="font-family:'Sora',sans-serif; letter-spacing:-0.03em; line-height:1.05;">
+          Sumate a la<br/>
+          <span class="gold-text">revolución M&M.</span>
+        </h2>
+
+        <p class="text-white/50 text-xl leading-relaxed mb-12 max-w-2xl mx-auto">
+          Sea que querés comprar, vender, o simplemente conocernos mejor, estamos a un mensaje de distancia. Escribinos y empecemos.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/5491171319619?text=Hola%20M%26M!%20Quiero%20conocer%20m%C3%A1s." 
+             target="_blank" rel="noopener"
+             class="btn-primary px-10 py-5 rounded-2xl text-base flex items-center gap-3 animate-pulse-gold">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span>Escribinos por WhatsApp</span>
+          </a>
+          <a href="#productos" class="btn-outline px-10 py-5 rounded-2xl text-base flex items-center gap-2">
+            <span>Ver productos</span>
+          </a>
+        </div>
+
+        <!-- Trust signals -->
+        <div class="flex flex-wrap items-center justify-center gap-6 mt-14 pt-14 border-t border-white/05">
+          <div class="flex items-center gap-2 text-white/30 text-sm">
+            <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Compra segura
+          </div>
+          <div class="flex items-center gap-2 text-white/30 text-sm">
+            <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            Respuesta rápida
+          </div>
+          <div class="flex items-center gap-2 text-white/30 text-sm">
+            <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Calidad garantizada
+          </div>
+          <div class="flex items-center gap-2 text-white/30 text-sm">
+            <svg width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="2" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+            Envíos a todo el país
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="pt-20 pb-10 relative" style="background:#050A14; border-top: 1px solid rgba(212,175,55,0.08);">
+    
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="grid md:grid-cols-4 gap-10 mb-16">
+        
+        <!-- Brand column -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="logo-text gold-text">M&M Premium</div>
+          </div>
+          <p class="text-white/35 text-sm leading-relaxed mb-6 max-w-xs">
+            Innovación, estilo y confianza. Productos importados premium, tecnología y accesorios modernos para quienes exigen lo mejor.
+          </p>
+          <!-- Social links -->
+          <div class="flex items-center gap-3">
+            <a href="https://www.instagram.com/mym.arg_/" aria-label="Instagram" target="_blank" class="w-10 h-10 glass rounded-xl flex items-center justify-center hover:border-gold/30 transition-all duration-300 hover:scale-105" style="border-color:rgba(212,175,55,0.15);">
+              <svg width="16" height="16" fill="rgba(212,175,55,0.7)" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok" class="w-10 h-10 glass rounded-xl flex items-center justify-center hover:border-gold/30 transition-all duration-300 hover:scale-105" style="border-color:rgba(212,175,55,0.15);">
+              <svg width="14" height="16" fill="rgba(212,175,55,0.7)" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+            </a>
+            <a href="https://wa.me/5491171319619" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 glass rounded-xl flex items-center justify-center hover:border-gold/30 transition-all duration-300 hover:scale-105" style="border-color:rgba(212,175,55,0.15);">
+              <svg width="16" height="16" fill="rgba(212,175,55,0.7)" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="text-sm font-semibold mb-5 text-white/60" style="font-family:'Sora',sans-serif; letter-spacing:0.1em; text-transform:uppercase;">Navegación</h4>
+          <ul class="space-y-3">
+            <li><a href="#inicio" class="text-white/35 text-sm hover:text-gold transition-colors" style="--tw-text-opacity:1;">Inicio</a></li>
+            <li><a href="#sobre" class="text-white/35 text-sm hover:text-gold transition-colors">Nosotros</a></li>
+            <li><a href="#productos" class="text-white/35 text-sm hover:text-gold transition-colors">Productos</a></li>
+            <li><a href="#beneficios" class="text-white/35 text-sm hover:text-gold transition-colors">Beneficios</a></li>
+            <li><a href="#comunidad" class="text-white/35 text-sm hover:text-gold transition-colors">Comunidad</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-sm font-semibold mb-5 text-white/60" style="font-family:'Sora',sans-serif; letter-spacing:0.1em; text-transform:uppercase;">Contacto</h4>
+          <ul class="space-y-4">
+            <li>
+              <a href="https://wa.me/5491171319619" target="_blank" rel="noopener" class="flex items-center gap-2 text-white/35 text-sm hover:text-gold transition-colors group">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24" class="text-gold/50 group-hover:text-gold transition-colors" style="color:rgba(212,175,55,0.5);"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contacto@mmstore.com.ar" class="flex items-center gap-2 text-white/35 text-sm hover:text-gold transition-colors group">
+                <svg width="14" height="14" fill="none" stroke="rgba(212,175,55,0.5)" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                contacto@mmstore.com.ar
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center gap-2 text-white/35 text-sm">
+                <svg width="14" height="14" fill="none" stroke="rgba(212,175,55,0.5)" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Argentina
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="pt-8 border-t border-white/05 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-white/20 text-xs" style="font-family:'Inter',sans-serif;">
+          © 2025 M&M Premium Store. Todos los derechos reservados.
+        </div>
+        <div class="text-xs gold-text glow-gold-text" style="font-family:'Sora',sans-serif; letter-spacing:0.1em;">
+          Innovación · Estilo · Confianza
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="main.js"></script>
+
+</body>
+</html>
